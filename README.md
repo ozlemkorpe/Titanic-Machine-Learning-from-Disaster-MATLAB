@@ -5,7 +5,7 @@ The goal of this project is predicting the survival of passengers based on a set
  
  
 ## Titanic_with_DecisionTree
-In this file prediction and testing is only done by using training data to calculate average accuracy.
+In this file prediction and testing is only done by using training data to calculate average accuracy. It has about 0.80380 average score.
 
 ## Predictions_For_TestSet
 This file uses test set to create csv file for Kaggle competition. Created file can be submitted into Kaggle. It is sumbitted into competition and got 0.78947 score.
