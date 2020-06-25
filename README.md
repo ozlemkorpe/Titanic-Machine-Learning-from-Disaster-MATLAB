@@ -21,6 +21,8 @@ Contains training, optimization of the training model, and performing prediction
 
 ## Titanic_with_DecisionTree
 In this file prediction and testing is only done by using training data to calculate average accuracy. It has about 0.80380 average score.
+![Kaggle result](https://github.com/ozlemkorpe/Titanic-Machine-Learning-from-Disaster-MATLAB/blob/master/images/treegraph.jpg)
+
 
 ## Results
 ![Kaggle result](https://github.com/ozlemkorpe/Titanic-Machine-Learning-from-Disaster-MATLAB/blob/master/images/kaggle.png)
