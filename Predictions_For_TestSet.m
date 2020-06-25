@@ -122,11 +122,11 @@ disp(general_accuracy);
 
 %%%%%%%%%%%%%%%%%%-----------------PERFORMING ON TEST DATA
 missing_test_filled_data = sum(ismissing(test_filled_data));
-% 
+
 test_classification_model = fitctree(normalized_data, 'Survived~Age+Fare+Parch+SibSp+female+male+Pclass','MaxNumSplits',37); %Classification Model
-% 
+
 test_cross_validated_model = crossval(test_classification_model);
-% 
+ 
 test_predictions = predict(cross_validated_model.Trained{1}, test_normalized_data(1:end,1:end-1));
 
 pass_table = test_normalized_data.PassengerId;
