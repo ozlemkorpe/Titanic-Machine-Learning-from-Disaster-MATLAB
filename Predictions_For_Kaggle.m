@@ -1,9 +1,10 @@
 %Titanic Machine Learning from Disaster Compteition from Kaggle
 %Prepared by Özlem Körpe
 %Github: https://github.com/ozlemkorpe/Titanic-Machine-Learning-from-Disaster-MATLAB
+
 %Note1: Please check out the data path before run, fix if necessary.
-%Note2: Change the number of iterations for calculating average/general accuracy of prediction.
-%Note3: Set path for exporting Result.csv file
+%Note2: Count of iterations is set as 0 initially.Change the number of iterations for calculating average/general accuracy of prediction.
+%Note3: Set local file path for exporting Result.csv file
 
 clear %Clear the workspace
 
@@ -115,6 +116,7 @@ for a = 1:1
    %--------------------------------ANALYZING THE RESULT
    %Confusion Matrix: / diagonal will give the false predictions, \ will be the rigth predictions.
    Results = confusionmat(cross_validated_model.Y(test(cv)),Predictions); 
+   coloredResultsMatrix = confusionchart(Results,'DiagonalColor','green');
    right_results = Results(1,1) + Results(2,2);
    wrong_results = Results(1,2) + Results(2,1);
    truth_score = right_results /(right_results + wrong_results);
